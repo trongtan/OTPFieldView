@@ -77,7 +77,7 @@ import UIKit
     
     public weak var delegate: OTPFieldViewDelegate?
     
-    fileprivate var secureEntryData = [String]()
+    public var secureEntryData = [String]()
     
     override public func awakeFromNib() {
         super.awakeFromNib()
