@@ -244,6 +244,13 @@ import UIKit
         }
     }
     
+    public func clearAllText() {
+		for index in stride(from: 0, to: fieldsCount, by: 1) {
+			if let oldOtpField = viewWithTag(index + 1) as? OTPTextField {
+				deleteText(in: oldOtpField)
+			}
+		}
+	}
 }
 
 extension OTPFieldView: UITextFieldDelegate {
